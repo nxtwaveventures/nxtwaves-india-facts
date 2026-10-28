@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.nxtwaveventures/nxtwaves-india-facts",
+  "title": "NxtWaves India Facts",
+  "description": "Official, sourced answers on Indian rules: banned drugs, NLEM, BIS, FSSAI food labels, resume match.",
+  "repository": { "url": "https://github.com/nxtwaveventures/nxtwaves-india-facts", "source": "github" },
+  "websiteUrl": "https://nxtwaves-agents.vercel.app/llms.txt",
+  "version": "1.0.0",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?actors=anamika67/india-medicine-facts,anamika67/india-bis-compliance-check,anamika67/india-food-label-checker,anamika67/resume-jd-match-score,anamika67/nxtwaves-expert-agents",
+      "headers": [
+        { "name": "Authorization", "description": "Bearer <your Apify API token>. Tools are pay per result via Apify.", "isRequired": true, "isSecret": true }
+      ]
+    }
+  ]
+}
